@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 7012230347928357826}
   - component: {fileID: 2135460044662469344}
   m_Layer: 8
-  m_Name: MinimapIcon
+  m_Name: MinimapSprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -341,9 +341,10 @@ GameObject:
   - component: {fileID: 8237984284102275685}
   - component: {fileID: 2785450500153874845}
   - component: {fileID: 3613871225020020893}
+  - component: {fileID: -5966818395120904757}
   m_Layer: 0
   m_Name: Penguin
-  m_TagString: Untagged
+  m_TagString: Penguin
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -361,6 +362,7 @@ Transform:
   m_Children:
   - {fileID: 8251053260928796767}
   - {fileID: 7012230347928357826}
+  - {fileID: 1688575233859250427}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: -234.18399, z: 0}
@@ -437,4 +439,123 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a97aafe175ee1be418e9c6e7e6960c1f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  soundEffect: {fileID: 5243650243079656709}
   target: {fileID: 0}
+--- !u!212 &-5966818395120904757
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8257257639311969469}
+  m_Enabled: 0
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300000, guid: 0bc9d4a19a6e1d843a312897115e3169, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 5.12, y: 5.12}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
+--- !u!1001 &4402891622997181662
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 8250622134258262515}
+    m_Modifications:
+    - target: {fileID: 3035434755403156265, guid: da6f324a8ea16094c964ef94e03c772f, type: 3}
+      propertyPath: m_Name
+      value: Audio - Penguin
+      objectReference: {fileID: 0}
+    - target: {fileID: 3059404985821932581, guid: da6f324a8ea16094c964ef94e03c772f, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -94.596985
+      objectReference: {fileID: 0}
+    - target: {fileID: 3059404985821932581, guid: da6f324a8ea16094c964ef94e03c772f, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 87.37731
+      objectReference: {fileID: 0}
+    - target: {fileID: 3059404985821932581, guid: da6f324a8ea16094c964ef94e03c772f, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -136.86595
+      objectReference: {fileID: 0}
+    - target: {fileID: 3059404985821932581, guid: da6f324a8ea16094c964ef94e03c772f, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3059404985821932581, guid: da6f324a8ea16094c964ef94e03c772f, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.89541674
+      objectReference: {fileID: 0}
+    - target: {fileID: 3059404985821932581, guid: da6f324a8ea16094c964ef94e03c772f, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3059404985821932581, guid: da6f324a8ea16094c964ef94e03c772f, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -0.44522908
+      objectReference: {fileID: 0}
+    - target: {fileID: 3059404985821932581, guid: da6f324a8ea16094c964ef94e03c772f, type: 3}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3059404985821932581, guid: da6f324a8ea16094c964ef94e03c772f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3059404985821932581, guid: da6f324a8ea16094c964ef94e03c772f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3059404985821932581, guid: da6f324a8ea16094c964ef94e03c772f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: da6f324a8ea16094c964ef94e03c772f, type: 3}
+--- !u!4 &1688575233859250427 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3059404985821932581, guid: da6f324a8ea16094c964ef94e03c772f, type: 3}
+  m_PrefabInstance: {fileID: 4402891622997181662}
+  m_PrefabAsset: {fileID: 0}
+--- !u!82 &5243650243079656709 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 8493514602161443291, guid: da6f324a8ea16094c964ef94e03c772f, type: 3}
+  m_PrefabInstance: {fileID: 4402891622997181662}
+  m_PrefabAsset: {fileID: 0}

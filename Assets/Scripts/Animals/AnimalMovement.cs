@@ -1,9 +1,12 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class AnimalMovement : MonoBehaviour
 {
+    private GameObject self;
+    public AudioSource soundEffect;
+
     private Rigidbody rb;
     public Transform target;
     Animator anim;
@@ -13,6 +16,7 @@ public class AnimalMovement : MonoBehaviour
 
     void Awake()
     {
+        self = GetComponent<GameObject>();
         rb = GetComponent<Rigidbody>();
         anim = GetComponent<Animator>();
     }
@@ -45,7 +49,10 @@ public class AnimalMovement : MonoBehaviour
 
      private void OnTriggerEnter(Collider other) {
          if (!canFollow)
-             if (other.CompareTag("Player"))
-                canFollow = true;
+            if (other.CompareTag("Player"))
+                if (Inventory.instance.Add(this.gameObject)) {
+                    canFollow = true;
+                    soundEffect.Play();
+                }
      }
 }
